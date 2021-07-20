@@ -2,7 +2,7 @@ pipeline {
   agent {
     node { label 'nodejs' } 
 	}
-    paramaters {
+  parameters {
        booleanParam( name: "RUN_FRONTEND_TESTS", defaultValue: true )
     }
   stages {
