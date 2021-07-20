@@ -8,7 +8,7 @@ pipeline {
 		git branch: 'main', url: 'https://github.com/vbg/do400-pipelines-control.git'
            }
 	}
-       stages ('Run Tests') {
+       stage ('Run Tests') {
           parallel {
 	      stage ('Backend Tests') {
                  steps {
